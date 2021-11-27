@@ -23,7 +23,7 @@ public class TicketController {
         this.ticketRepository = ticketRepository;
     }
     
-    @GetMapping("/tickets")
+    @GetMapping("/ticket")
     List<Ticket> allTickets(){
         return ticketRepository.findAll();
     }
